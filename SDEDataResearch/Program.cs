@@ -11,8 +11,17 @@ namespace SDEDataResearch
         private static SurveyItems surveyItems;
         static void Main(string[] args)
         {
-            var file = System.IO.File.ReadAllText(@".\rawdata.json");
-            surveyItems = new SurveyItems(file);
+            try
+            {
+                var file = System.IO.File.ReadAllText(@".\rawdata.json");
+                surveyItems = new SurveyItems(file);
+            } catch (Exception e)
+            {
+                Print("Error deserializing file.");
+                Print(e.Message);
+                Console.ReadLine();
+                return;
+            }
             /*
             Print("FrameWorks");
             Print(surveyItems.GetAllFrameworks(), true);
