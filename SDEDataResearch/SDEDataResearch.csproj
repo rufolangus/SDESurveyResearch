@@ -49,6 +49,8 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Range.cs" />
+    <Compile Include="SurveyItem.cs" />
     <Compile Include="SurveyItems.cs" />
   </ItemGroup>
   <ItemGroup>
