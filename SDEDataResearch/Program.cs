@@ -64,7 +64,7 @@ namespace SDEDataResearch
             Print("Pr Count: " + puertoRico.Count());
             Print("PR Average: " + prAverage);
             var proverallRange = puertoRico.Where(i => i.SalaryRange.FallsBetween(prAverage)).Select(i => i.SalaryRange).First();
-            Print("Overall PR Average range: " + proverallRange.ToString());
+            Print("PR Average range: " + proverallRange.ToString());
 
             
             var notPuertoRico = surveyItems.Items.Where(i => i.employeeLocation != "Puerto Rico").ToArray();
@@ -72,8 +72,7 @@ namespace SDEDataResearch
             var notPrAverage = notPuertoRico.Average(i => i.SalaryRange.Average);
             Print("Not PR Average: " + notPrAverage);
             var notproverallRange = puertoRico.Where(i => i.SalaryRange.FallsBetween(notPrAverage)).Select(i => i.SalaryRange).First();
-            Print("Overall PR Average range: " + notproverallRange.ToString());
-
+            Print("Not PR Average range: " + notproverallRange.ToString());
             Console.ReadLine();
         }
 
