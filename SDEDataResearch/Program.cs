@@ -11,7 +11,7 @@ namespace SDEDataResearch
         private static SurveyItems surveyItems;
         static void Main(string[] args)
         {
-            var file = System.IO.File.ReadAllText(@"C:\Users\blurryRobot\Desktop\rawdata.json");
+            var file = System.IO.File.ReadAllText(@".\rawdata.json");
             surveyItems = new SurveyItems(file);
             /*
             Print("FrameWorks");
