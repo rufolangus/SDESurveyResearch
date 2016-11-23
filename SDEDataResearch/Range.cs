@@ -11,7 +11,7 @@ namespace SDEDataResearch
         public double max;
         public double min;
 
-
+        public double Average { get { return (new double[] { min, max }).Average(); } }
         public Range(string size)
         {
             size = size.Replace("\'", "");
@@ -23,8 +23,9 @@ namespace SDEDataResearch
             }
             else if (size.Contains("Over"))
             {
-                min = 10;
-                max = 100;
+                var value = size.Replace("Over", "").Replace(" ", "");
+                min = double.Parse(value, System.Globalization.NumberStyles.AllowThousands);
+                max = min * 2;
             }
             else
             {
@@ -33,6 +34,11 @@ namespace SDEDataResearch
                 max = ints.Max();
                 min = ints.Min();
             }
+        }
+
+        public bool FallsBetween(double salary)
+        {
+            return salary >= min || salary <= max;
         }
 
         public override string ToString()

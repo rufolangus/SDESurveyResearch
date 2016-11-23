@@ -52,22 +52,17 @@ namespace SDEDataResearch
             */
             Print("LOWEST PAID");
             PrintDetails(lowestPaid,true);
-            var averageMax = surveyItems.Items.Average(i => i.SalaryRange.max);
-            var averageMin = surveyItems.Items.Average(i => i.SalaryRange.min);
+            var average= surveyItems.Items.Average(i => i.SalaryRange.Average);
             Print("");
-            Print("AVERAGE SALARY RANGE");
-            Print("Overall Average: " + averageMin + " - " + averageMax);
+            Print("AVERAGE SALARY");
+            Print("Overall Average: " + average);
             var puertoRico = surveyItems.Items.Where(i => i.employeeLocation == "Puerto Rico").ToArray();
-            var prAverageMax = puertoRico.Average(i => i.SalaryRange.max);
-            var prAverageMin = puertoRico.Average(i => i.SalaryRange.min);
-            Print("PR Average: " + prAverageMin + " - " + prAverageMax);
+            var prAverage = puertoRico.Average(i => i.SalaryRange.Average);
+            Print("PR Average: " + prAverage);
 
             var notPuertoRico = surveyItems.Items.Where(i => i.employeeLocation != "Puerto Rico").ToArray();
-
-            var notPrAverageMax = notPuertoRico.Average(i => i.SalaryRange.max);
-            var notPrAverageMin = notPuertoRico.Average(i => i.SalaryRange.min);
-            Print("Not PR Average: " + notPrAverageMin + " - " + notPrAverageMax);
-
+            var notPrAverage = notPuertoRico.Average(i => i.SalaryRange.Average);
+            Print("Not PR Average: " + notPrAverage);
             Console.ReadLine();
         }
 
@@ -132,6 +127,9 @@ namespace SDEDataResearch
             Print(item.ProgrammingLanguages, true);
             Print("FrameWorks:");
             Print(item.FrameWorks, true);
+            Print("");
+            Print("IDEs");
+            Print(item.IDES, true);
             Print("");
             Print("Team Size: " + item.TeamSize.ToString());
         }
