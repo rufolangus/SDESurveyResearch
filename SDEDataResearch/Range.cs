@@ -38,7 +38,7 @@ namespace SDEDataResearch
 
         public bool FallsBetween(double salary)
         {
-            return salary >= min || salary <= max;
+            return salary >= min && salary <= max;
         }
 
         public override string ToString()
