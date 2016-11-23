@@ -1,0 +1,8 @@
+c:\users\blurryrobot\documents\visual studio 2015\Projects\SDEDataResearch\SDEDataResearch\bin\Debug\SDEDataResearch.exe.config
+C:\Users\blurryRobot\documents\visual studio 2015\Projects\SDEDataResearch\SDEDataResearch\bin\Debug\SDEDataResearch.exe
+C:\Users\blurryRobot\documents\visual studio 2015\Projects\SDEDataResearch\SDEDataResearch\bin\Debug\SDEDataResearch.pdb
+C:\Users\blurryRobot\documents\visual studio 2015\Projects\SDEDataResearch\SDEDataResearch\bin\Debug\Newtonsoft.Json.dll
+C:\Users\blurryRobot\documents\visual studio 2015\Projects\SDEDataResearch\SDEDataResearch\bin\Debug\Newtonsoft.Json.xml
+C:\Users\blurryRobot\documents\visual studio 2015\Projects\SDEDataResearch\SDEDataResearch\obj\Debug\SDEDataResearch.csprojResolveAssemblyReference.cache
+C:\Users\blurryRobot\documents\visual studio 2015\Projects\SDEDataResearch\SDEDataResearch\obj\Debug\SDEDataResearch.exe
+C:\Users\blurryRobot\documents\visual studio 2015\Projects\SDEDataResearch\SDEDataResearch\obj\Debug\SDEDataResearch.pdb
